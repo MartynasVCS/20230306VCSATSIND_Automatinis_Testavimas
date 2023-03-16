@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace SeleniumTests
+namespace SeleniumTestsWithoutPOM
 {
     public class Demo
     {
@@ -24,7 +24,7 @@ namespace SeleniumTests
             buttonSearch.Click();
 
             string actualResult = driver.Title;
-            
+
             driver.Quit();
 
             Assert.AreEqual(expectedResult, actualResult);
