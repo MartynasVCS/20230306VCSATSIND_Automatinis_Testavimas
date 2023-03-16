@@ -47,8 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseTests\BaseTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\Google\SearchScenario.cs" />
+    <Compile Include="Tests\SeleniumEasy\CheckboxScenario.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
