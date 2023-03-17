@@ -92,5 +92,23 @@ namespace SeleniumFramework.Pages
         {
             return GetElement(locator).Text;
         }
+
+        internal static SelectElement GetSelectElement(string locator)
+        {
+            IWebElement element = GetElement(locator);
+            return new SelectElement(element);
+        }
+
+        internal static void SelectOptionByText(string locator, string optionText)
+        {
+            SelectElement selectElement = GetSelectElement(locator);
+            selectElement.SelectByText(optionText);
+        }
+
+        internal static string GetSelectedOption(string locator)
+        {
+            SelectElement selectElement = GetSelectElement(locator);
+            return selectElement.SelectedOption.Text;
+        }
     }
 }

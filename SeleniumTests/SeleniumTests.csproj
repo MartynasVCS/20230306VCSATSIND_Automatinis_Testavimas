@@ -51,6 +51,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\DemoQA\ButtonsScenario.cs" />
     <Compile Include="Tests\DemoQA\DynamicPropertiesScenario.cs" />
+    <Compile Include="Tests\DemoQA\SelectScenario.cs" />
     <Compile Include="Tests\Google\SearchScenario.cs" />
     <Compile Include="Tests\SeleniumEasy\CheckboxScenario.cs" />
   </ItemGroup>
