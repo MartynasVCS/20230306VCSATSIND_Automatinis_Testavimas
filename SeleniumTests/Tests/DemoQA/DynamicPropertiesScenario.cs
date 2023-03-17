@@ -2,8 +2,10 @@
 using SeleniumFramework.Pages.DemoQA;
 using SeleniumTests.BaseTests;
 
+[assembly: LevelOfParallelism(4)]
 namespace SeleniumTests.Tests.DemoQA
 {
+    [Parallelizable(scope: ParallelScope.Children)]
     internal class DynamicPropertiesScenario : BaseTest
     {
         [Test]
