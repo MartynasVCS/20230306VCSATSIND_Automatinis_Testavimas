@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.Extensions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
@@ -150,6 +151,16 @@ namespace SeleniumFramework.Pages
             {
                 return false;
             }
+        }
+
+        internal static void ExecuteJavascript(string script)
+        {
+            Driver.GetDriver().ExecuteJavaScript(script);
+        }
+
+        internal static void ScrollByUsingJavascript(int x, int y)
+        {
+            ExecuteJavascript($"window.scrollBy({x}, {y})");
         }
     }
 }
